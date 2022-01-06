@@ -22,14 +22,20 @@ h1 {
 	font-size: 36px;
 	line-height: 36px;
 
-	display: flex;
-	align-items: center;
-
 	color: #3F322F;
 }
 ul {
 	margin: 0;
 	padding: 0;
+}
+p {
+	padding: 0;
+	margin: 0;
+	font-family: Euclid Circular B;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22.82px;
 }
 
 #logo {
@@ -147,6 +153,7 @@ main	{
 #body_title {
 	position: relative;
 	height: 30px;
+	display: flex;
 
 	flex: none;
 	order: 1;
@@ -369,9 +376,6 @@ main	{
 	order: 1;
 	align-self: stretch;
 	flex-grow: 0;
-
-	-ms-overflow-style: none;
-	 scrollbar-width: none;
 }
 
 .item {
@@ -419,12 +423,6 @@ main	{
 	margin: 0;
 	width: 312px;
 	height: 116px;
-
-	font-family: Euclid Circular B;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 22.82px;
 
 	flex: none;
 	order: 1;
@@ -530,8 +528,12 @@ main	{
 	flex-grow: 0;
 }
 
-.view_menu::-webkit-scrollbar {
+#view_menu::-webkit-scrollbar {
     display: none;
+}
+#view_menu {
+	-ms-overflow-style: none;
+	 scrollbar-width: none;
 }
 
 /* delivery */
@@ -566,49 +568,100 @@ main	{
 
 /*bonuses_panel*/
 #bonuses_panel{
-	position: relative;
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
 	height: 300px;
-
-	margin-bottom: 20px;
-	order: 2;
 
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 0px;
+
+	margin-bottom: 20px;
+	order: 2;
 };
 
-#bonus_text {
+.bonus_text {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
+	align-items: stretch;
 
 	position: relative;
 
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 20px;
+	align-self: stretch;
+}
+.bonus_name {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+
+	font-family: Euclid Circular B;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 38px;
+
+	color: #C98952;
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	margin-bottom: 10px;
+}
+.bonus_description {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+
+	font-family: Euclid Circular B;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+
+	color: #3F322F;
+
+	flex: none;
+	order: 1;
+	flex-grow: 1;
 }
 
-.bonus_card {
-	position: relative;
+#bonus_card {
 	flex: none;
 	order: 1;
 	flex-grow: 0;
-
 }
+
 /*abouts us panel*/
 #about_us_panel {
 	position: relative;
 	width: 1200px;
 	height: 760px;
-	margin-bottom: 20px;
 	order: 3;
+	margin-bottom: 20px;
+}
+
+#about_us {
+	position: relative;
+	width: 385px	;
+	height: 82px;
+	margin: auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: #F4F4F1;
+	border: 10px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+
+#about_us_text {
 }
 /* contacts panel */
 #contacts_panel {
