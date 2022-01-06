@@ -14,20 +14,20 @@
   <header class="nav_bar">
     <div class="container">
       <div class="navigation_panel">
-        <img class="logo">
+        <img class="logo" src="images/logo.png">
         <nav class="nav">
-          <a class="button_nav button_M" href="#">Menu</a>
-          <a class="button_nav button_AS" href="#">About Us</a>
-          <a class="button_nav button_C" href="#">Contacts</a>
+          <a class="button_nav button_M" href="">Menu</a>
+          <a class="button_nav button_AS" href="">About Us</a>
+          <a class="button_nav button_C" href="">Contacts</a>
         </nav>
       </div>
     </div>
   </header>
-  <img class="intro">
-  <div class=body>
+  <img id="intro_bg_image">
+  <main>
     <div class="container">
       <div class="body_beginning">
-        <img class="bubble_tea" src="images/bubble_tea_1.png">
+        <img id="bubbel_tea" src="images/bubble_tea.png" 	width="27px" height="27px">
         <h1 class="body_title">Drinks that can brighten up any of your days</h1>
       </div>
       <div class="menu_panel">
@@ -36,13 +36,8 @@
             <h1>Menu</h1>
           </div>
           <div class="box time">
-            <div class="open_close">
-              <h1>Now</h1>
-              <div class=open_or_closed>
-                <h1>open</h1>
-              </div>
-            </div>
-            <h4>Open every day 11 am - 10 pm</h4>
+            <h1 class="open_close">Now<div id="open">open</div></h1>
+            <h4 class="open_hours">Open every day 11 am - 10 pm</h4>
           </div>
         </div>
         <div class="menu">
@@ -54,59 +49,113 @@
             <button class="button_menu button_IT" type="button">Ice tea</button>
             <button class="button_menu button_C" type="button">Coffee</button>
           </div>
-          <div class="view_menu">
-            <div class="menu_products">
-              <div class="item i0">
+          <ul class="view_menu">
+              <li class="item i0">
                 <div class="item_details">
                   <h2 class="name_of_item">Name of item</h2>
-                  <p class=description_of_item>Description of item Description of item Description of item Description of item Description of item Description of item</p>
+                  <p class="description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
                 </div>
                 <div class="item_image_price">
                   <div class="item_price">
-                    <div class="large">
-                      <h4>Large</h4>
-                      <div class="large_price">
-                        <img class="tenge_image" src="images/tenge.png" height="36" width="27">
-                        <>1400</>
-                      </div>
+                    <div class="price_details">
+                      <h4 class="text">Large</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
                     </div>
-                    <div class="medium">
-                      <h4>Medium</h4>
-                      <div class="medium_price">
-                        <img class="tenge_image" src="images/tenge.png" height="36" width="27">
-                        <b1>1100</b1>
-                      </div>
+                    <div class="price_details">
+                      <h4 class="text">Medium</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
                     </div>
-                    <div class="bubbles">
-                      <div class="plus_bubbles">
-                        <img src="images/plus_sign.png" height="19" width="18">
-                        <h4>Bubbles</h4>
-                      </div>
-                      <div class="bubbles_price">
-                        <img class="tenge_image" src="images/tenge.png" height="36" width="27">
-                        <h1>200</h1>
-                      </div>
+                    <div class="price_details">
+                      <h4 class="text"><img class="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
                     </div>
                   </div>
-                  <div class="item_image">
-                    <img src="images/item_image.png" width="227.67" height="342">
-                  </div>
+                  <img class="item_image" src="images/item_image.png" width="227.67" height="342">
                 </div>
-              </div>
-            </div>
-          </div>
+              </li>
+              <li class="item i1">
+                <div class="item_details">
+                  <h2 class="name_of_item">Name of item</h2>
+                  <p class="description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+                </div>
+                <div class="item_image_price">
+                  <div class="item_price">
+                    <div class="price_details">
+                      <h4 class="text">Large</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                    <div class="price_details">
+                      <h4 class="text">Medium</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                    <div class="price_details">
+                      <h4 class="text"><img class="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                  </div>
+                  <img class="item_image" src="images/item_image.png" width="227.67" height="342">
+                </div>
+              </li>
+              <li class="item i2">
+                <div class="item_details">
+                  <h2 class="name_of_item">Name of item</h2>
+                  <p class="description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+                </div>
+                <div class="item_image_price">
+                  <div class="item_price">
+                    <div class="price_details">
+                      <h4 class="text">Large</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                    <div class="price_details">
+                      <h4 class="text">Medium</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                    <div class="price_details">
+                      <h4 class="text"><img class="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                  </div>
+                  <img class="item_image" src="images/item_image.png" width="227.67" height="342">
+                </div>
+              </li>
+              <li class="item i3">
+                <div class="item_details">
+                  <h2 class="name_of_item">Name of item</h2>
+                  <p class="description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+                </div>
+                <div class="item_image_price">
+                  <div class="item_price">
+                    <div class="price_details">
+                      <h4 class="text">Large</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                    <div class="price_details">
+                      <h4 class="text">Medium</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                    <div class="price_details">
+                      <h4 class="text"><img class="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                      <h1 class="price"><img class="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                    </div>
+                  </div>
+                  <img class="item_image" src="images/item_image.png" width="227.67" height="342">
+                </div>
+              </li>
+          </ul>
           <div class="delivery">
             <h1>Order through</h1>
-            <button class="wolt" type="button" href=""><img src="images/wolt_logo.png" width="100px" height="46.13px"></button>
+            <a class="wolt" href="https://wolt.com/en/kaz/nur-sultan/restaurant/boba" target="_blank"><img src="images/wolt_logo.png" width="100px" height="46.13px"></a>
           </div>
         </div>
+        <div class="menu_back"></div>
       </div>
       <div class="bonuses_panel">
         <div class="bonus_text">
-          <h3>10th Boba tea for free</h3>
+          <h1>10th Boba tea for free</h1>
           <p>Come to boba tea, collect nine marks on the coupon and get the tenth drink as a gift.</p>
         </div>
-        <img class="">
+        <div class="bonus_card"> </div>
       </div>
       <div class="about_us_panel">
         <h1 class="about_us_text">About us</h1>
@@ -128,47 +177,45 @@
           </div>
         </div>
       </div>
-      <div class="footer_panel">
-        <div class="footer_data">
-          <hr class="line">
-          <div class="main_footer">
-            <div class="logo_follow">
-              <img class=" ">
-              <div class="follow">
-                <h3>Follow us on</h3>
-                <img class=" ">
-              </div>
-            </div>
-            <div class="info">
-              <div class="opening_hours">
-                <h4>Opening hours</h4>
-                <div class="options">
-                  <p>Every day </p>
-                  <p>11 am - 10 pm</p>
-                </div>
-              </div>
-              <div class="contacts_footer">
-                <h4>Contacts</h4>
-                <div class="contact_details">
-                  <p>Map </p>
-                  <p>+7 777 777 77 77</p>
-                </div>
-              </div>
-              <div class="products_footer">
-                <h4>Products</h4>
-                <div class="opitons">
-                  <p>Manu </p>
-                  <p>Bonuses</p>
-                </div>
-              </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <hr class="line">
+      <div class="main_footer">
+          <img class="logo" src="images/logohover.png">
+          <div class="follow">
+            <h3>Follow us on</h3>
+            <img class=" ">
+          </div>
+        <div class="info">
+          <div class="opening_hours">
+            <h4>Opening hours</h4>
+            <div class="options">
+              <p>Every day </p>
+              <p>11 am - 10 pm</p>
             </div>
           </div>
-          <hr class="line">
-          <h6>Copyright 2022 © boba.kz</h6>
+          <div class="contacts_footer">
+            <h4>Contacts</h4>
+            <div class="contact_details">
+              <p>Map </p>
+              <p>+7 777 777 77 77</p>
+            </div>
+          </div>
+          <div class="products_footer">
+            <h4>Products</h4>
+            <div class="opitons">
+              <p>Manu </p>
+              <p>Bonuses</p>
+            </div>
+          </div>
         </div>
       </div>
+      <hr class="line">
+      <h6>Copyright 2022 © boba.kz</h6>
     </div>
-  </div>
+  </footer>
 </body>
 
 </html>
