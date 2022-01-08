@@ -4,9 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <title>Boba tea</title>
 </head>
 
@@ -24,10 +21,11 @@
     </div>
   </header>
   <img id="intro_bg_image">
+  <img id="handboba">
   <main>
     <div class="container">
       <div id="body_beginning">
-        <img id="bubbel_tea" src="images/bubble_tea.png" 	width="27px" height="27px">
+        <img src="images/bubble_tea.png" 	width="27px" height="27px">
         <h1 id="body_title">Drinks that can brighten up any of your days</h1>
       </div>
       <div id="menu_panel">
@@ -61,7 +59,7 @@
                     </div>
                     <div class="price_details" id="medium">
                       <h4 class="text">Medium</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
                     </div>
                     <div class="price_details" id="bubbles">
                       <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
@@ -84,7 +82,7 @@
                     </div>
                     <div class="price_details" id="medium">
                       <h4 class="text">Medium</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
                     </div>
                     <div class="price_details" id="bubbles">
                       <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
@@ -107,7 +105,7 @@
                     </div>
                     <div class="price_details" id="medium">
                       <h4 class="text">Medium</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
                     </div>
                     <div class="price_details" id="bubbles">
                       <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
@@ -130,7 +128,7 @@
                     </div>
                     <div class="price_details" id="medium">
                       <h4 class="text">Medium</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
                     </div>
                     <div class="price_details" id="bubbles">
                       <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
@@ -156,58 +154,68 @@
         <img id="bonus_card" src="images/bonus_card.png" width="416px" height="294px">
       </div>
       <div id="about_us_panel">
-        <h1 id="about_us">About us</h1>
+        <h1 class="box" id="about_us">About us</h1>
         <h2 id="slogan">It’s <br> tealicious</h2>
         <p id="about_us_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div id="contacts_panel">
-        <h1 id="contacts">Contacts</h1>
-        <div class="contacts_details">
-          <div class="location">
-            <img>
-            <h4><b>​Түркістан, 16/5 Есиль район, Нур-Султан</b></h4>
+        <div class="box" id="contacts_box">
+          <h1 id="contacts_text">Contacts</h1>
+          <div id=contact_details>
+            <div id="location">
+              <img  src="images/location.png" width="50" height="50">
+              <p id="address">​Түркістан, 16/5 Есиль район, Нур-Султан</p>
+            </div>
+            <div class="links">
+              <a href="https://www.instagram.com/bobateakz/" target="_blank"><img class="icon_link" src="images/instagram.png"></a>
+            </div>
           </div>
-          <img class="link" src="images/instagram.png" height="30px" width="30px">
         </div>
+        <div class="map"><img src="images/map.png" width="1400" height="828.34"></div>
       </div>
     </div>
   </main>
   <footer>
     <div class="container">
-      <hr class="line">
-      <div class="main_footer">
-          <img class="logo" src="images/logohover.png">
-          <div class="follow">
-            <h3>Follow us on</h3>
-            <img class=" ">
+      <hr id="line1">
+      <div id="main_footer">
+        <div id="logo_follow">
+          <img id="logo_foo" src="images/logohover.png">
+          <div id="follow_us">
+            <h2>Follow us</h2>
+            <div class="footer_links">
+              <a class="footer_link"  href="https://www.instagram.com/bobateakz/" target="_blank">
+                <img class="footer_icon_link" src="images/instagram.png">
+              </a>
+            </div>
           </div>
-        <div class="info">
-          <div class="opening_hours">
-            <h4>Opening hours</h4>
+        </div>
+        <div id="info">
+          <div id="opening_hours">
+            <h3 class="options_title">Opening hours</h3>
             <div class="options">
-              <p>Every day </p>
-              <p>11 am - 10 pm</p>
+              <h4 class="option">Every day</br>11 am - 10 pm</h4>
             </div>
           </div>
-          <div class="contacts_footer">
-            <h4>Contacts</h4>
-            <div class="contact_details">
-              <p>Map </p>
-              <p>+7 777 777 77 77</p>
+          <div id="contacts_footer">
+            <h3 class="options_title">Contacts</h3>
+            <div class="options">
+              <h4 class="option">Map</h4>
+              <h4 class="option">+7 777 777 77 77</h4>
             </div>
           </div>
-          <div class="products_footer">
-            <h4>Products</h4>
-            <div class="opitons">
-              <p>Manu </p>
-              <p>Bonuses</p>
+          <div id="products_footer">
+            <h3 class="options_title">Products</h3>
+            <div class="options">
+              <h4 class="option">Manu</h4>
+              <h4 class="option">Bonuses</h4>
             </div>
           </div>
         </div>
       </div>
-      <hr class="line">
-      <h6>Copyright 2022 © boba.kz</h6>
+      <hr id="line1">
+      <h4 id="copyright">Copyright 2022 © boba.kz</h4>
     </div>
   </footer>
 </body>
