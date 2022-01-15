@@ -988,7 +988,6 @@ footer {
 	flex-grow: 0;
 	margin-bottom: 10px;
 }
-
 #line1 {
 	flex: none;
 	align-self: stretch;
@@ -997,7 +996,6 @@ footer {
 	height: : 4px;
 	color: #F9FBF7;
 }
-
 #copyright {
 	text-align: center;
 
