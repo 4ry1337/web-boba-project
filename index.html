@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <title>Boba tea</title>
   <link rel="icon" href="images/_logo_.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/_logo_.ico" type="image/x-icon">
@@ -13,14 +14,14 @@
 <body>
   <header>
     <div class="container">
-      <div id="navigation_panel">
-        <img id="logo" src="images/logo.png">
-        <nav id="nav">
-          <a class="button_nav" id="button_M" href="">Menu</a>
-          <a class="button_nav" id="button_AS" href="">About Us</a>
-          <a class="button_nav" id="buttin_C" href="">Contacts</a>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <img class="navbar-brand" src="images/bubbles.png">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link button_nav" id="button_M" href="">Menu</a></li>
+          <li class="nav-item"><a class="nav-link button_nav" id="button_AS" href="">About Us</a></li>
+          <li class="nav-item"><a class="nav-link button_nav" id="buttin_C" href="">Contacts</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <img id="intro_bg_image">
@@ -34,7 +35,7 @@
       <div id="menu_panel">
         <div id="cafe_detials">
           <h1 class="box" id="menu_text">Menu</h1>
-          <div class="box" id="time">
+          <div class="row box" id="time">
             <h1 id="open_close">Now<span id="open">open</span></h1>
             <h4 id="open_hours">Open every day 11 am - 10 pm</h4>
           </div>
@@ -175,7 +176,9 @@
             </div>
           </div>
         </div>
-        <div class="map"><img src="images/map.png" width="1815" height="794"></div>
+        <iframe class="map"
+                src="https://yandex.com/map-widget/v1/?um=constructor%3Abeb61ce5becf9f391d556fe4737f67d6dddfcc4b3934fc6601b717c71d8a5335&amp;source=constructor">
+        </iframe>
       </div>
     </div>
   </main>
