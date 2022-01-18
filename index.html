@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+
   <title>Boba tea</title>
   <link rel="icon" href="images/_logo_.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/_logo_.ico" type="image/x-icon">
@@ -14,33 +16,69 @@
 <body>
   <header>
     <div class="container">
-      <nav class="navbar">
-        <img class="navbar-brand" src="images/bubbles.png">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link button_nav" id="button_M" href="">Menu</a></li>
-          <li class="nav-item"><a class="nav-link button_nav" id="button_AS" href="">About Us</a></li>
-          <li class="nav-item"><a class="nav-link button_nav" id="buttin_C" href="">Contacts</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img
+            class="d-inline-block align-text-top icon"
+            src="images/bubbles.png"
+            width="32.4" height="30">
+            boba
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Home</h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
       </nav>
     </div>
   </header>
-  <img id="intro_bg_image">
-  <img id="handboba">
-  <main>
+  <img id="intro-bg">
+  <main class="margin-b-20">
     <div class="container">
-      <div id="body_beginning">
-        <img src="images/bubble_tea.png" 	width="27px" height="27px">
-        <h1 id="body_title">Drinks that can brighten up any of your days</h1>
+      <div class="d-flex flex-row align-items-center margin-b-20">
+        <img class="" src="images/bubble_tea.png" 	width="27px" height="27px">
+        <h1 class="" id="body_title">Drinks that can brighten up any of your days</h1>
       </div>
-      <div id="menu_panel">
-        <div id="cafe_detials">
-          <h1 class="box" id="menu_text">Menu</h1>
-          <div class="row box" id="time">
-            <h1 id="open_close">Now<span id="open">open</span></h1>
-            <h4 id="open_hours">Open every day 11 am - 10 pm</h4>
-          </div>
+      <div class="d-flex flex-row justify-content-start margin-b-20">
+        <h1 class="box col-md-3 d-flex align-items-center justify-content-center padding-10-10-20-10 margin-r-20">Menu</h1>
+        <div class="box row align-items-center justify-content-between w-100 padding-10-10-20-10">
+          <h1 class="col-md-auto">Now<span id="closed">closed</span></h1>
+          <h4 class="col-md-auto" id="open_hours">Open every day 11 am - 10 pm</h4>
         </div>
-        <div id="menu">
+      </div>
+      <div class="d-flex flex-column align-items-start margin-b-20 w-100" id="menu_panel">
+        <div class=""id="menu">
           <div id="product_categories">
             <button class="button_menu" id="button_NP" type="button">New Products</button>
             <button class="button_menu" id="button_MT" type="button">Milk tea</button>
@@ -73,97 +111,26 @@
                   <img class="item_image" src="images/item_image.png" width="227.67" height="342">
                 </div>
               </li>
-              <li class="item" id="i1">
-                <div class="item_details">
-                  <h1 class="name_of_item">Name of item</h1>
-                  <p class="description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
-                </div>
-                <div class="item_image_price">
-                  <div class="item_price">
-                    <div class="price_details" id="large">
-                      <h4 class="text">Large</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
-                    </div>
-                    <div class="price_details" id="medium">
-                      <h4 class="text">Medium</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
-                    </div>
-                    <div class="price_details" id="bubbles">
-                      <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
-                    </div>
-                  </div>
-                  <img class="item_image" src="images/item_image.png" width="227.67" height="342">
-                </div>
-              </li>
-              <li class="item" id="i2">
-                <div class="item_details">
-                  <h1 class="name_of_item">Name of item</h1>
-                  <p class="description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
-                </div>
-                <div class="item_image_price">
-                  <div class="item_price">
-                    <div class="price_details" id="large">
-                      <h4 class="text">Large</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
-                    </div>
-                    <div class="price_details" id="medium">
-                      <h4 class="text">Medium</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
-                    </div>
-                    <div class="price_details" id="bubbles">
-                      <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
-                    </div>
-                  </div>
-                  <img class="item_image" src="images/item_image.png" width="227.67" height="342">
-                </div>
-              </li>
-              <li class="item" id="i3">
-                <div class="item_details">
-                  <h1 class="name_of_item">Name of item</h1>
-                  <p class="description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
-                </div>
-                <div class="item_image_price">
-                  <div class="item_price">
-                    <div class="price_details" id="large">
-                      <h4 class="text">Large</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
-                    </div>
-                    <div class="price_details" id="medium">
-                      <h4 class="text">Medium</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
-                    </div>
-                    <div class="price_details" id="bubbles">
-                      <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
-                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
-                    </div>
-                  </div>
-                  <img class="item_image" src="images/item_image.png" width="227.67" height="342">
-                </div>
-              </li>
           </ul>
           <div id="delivery">
             <h1>Order through</h1>
             <a id="wolt" href="https://wolt.com/en/kaz/nur-sultan/restaurant/boba" target="_blank"><img src="images/wolt_logo.png" width="100px" height="46.13px"></a>
           </div>
         </div>
-        <div id="menu_back"></div>
+        <div class="box" id="menu_back"></div>
       </div>
-      <div id="bonuses_panel">
+      <!--<div id="bonuses_panel">
         <div class="bonus_text">
           <h1 class="bonus_name">10th Boba tea for free</h1>
           <div class=bonus_description>Come to boba tea, collect nine marks on the coupon and get the tenth drink as a gift.</div>
         </div>
         <img id="bonus_card" src="images/bonus_card.png" width="416px" height="294px">
-      </div>
-      <div id="about_us_panel">
+      </div>-->
+      <!--<div id="about_us_panel">
         <h1 class="box" id="about_us">About us</h1>
         <h2 id="slogan">It’s <br> tealicious</h2>
-        <p id="about_us_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div id="contacts_panel">
+      </div>-->
+      <!--<div id="contacts_panel">
         <div class="box" id="contacts_box">
           <h1 id="contacts_text">Contacts</h1>
           <div id=contact_details>
@@ -179,10 +146,10 @@
         <iframe class="map"
                 src="https://yandex.com/map-widget/v1/?um=constructor%3Abeb61ce5becf9f391d556fe4737f67d6dddfcc4b3934fc6601b717c71d8a5335&amp;source=constructor">
         </iframe>
-      </div>
+      </div>-->
     </div>
   </main>
-  <footer>
+  <!--<footer>
     <div class="container">
       <hr id="line1">
       <div id="main_footer">
@@ -223,7 +190,7 @@
       <hr id="line1">
       <h4 id="copyright">Copyright 2022 © boba.kz</h4>
     </div>
-  </footer>
+  </footer>-->
 </body>
 
 </html>

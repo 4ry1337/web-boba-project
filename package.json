@@ -1,0 +1,22 @@
+{
+  "name": "web-project-boba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesbianboy/web-boba-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesbianboy/web-boba-project/issues"
+  },
+  "homepage": "https://github.com/lesbianboy/web-boba-project#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
