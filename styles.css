@@ -58,6 +58,9 @@ p {
 	font-size: 18px;
 	line-height: 22.82px;
 }
+a:hover {
+    color: #000;
+}
 /* Custom */
 .box {
 	background: #F4F4F1;
@@ -240,12 +243,18 @@ main	{
 }
 /* items */
 .item {
+	text-decoration: none;
+	color: inherit;
 	padding: 16px 24px;
 	width: 360px;
 	height: 510px;
 	background: #FFFFFF;
 	border-radius: 20px;
 	margin-right: 50px;
+	transition: border .2s ease-in ease-out;
+}
+.item:hover{
+	border: 3px solid #D5D6DA;
 }
 .item_details {
 	flex: none;
@@ -349,6 +358,46 @@ main	{
 	box-sizing: border-box;
 	border-radius: 20px;
 	z-index: -1;
+}
+.popup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.popup:target{
+	opacity: 1;
+	visibility: visible;
+}
+.popup-body{
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 50px;
+}
+
+.popup-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 20px;
+	background: #FFFFFF;
+	border-radius: 20px;
+}
+.popup-close{
+
+}
+.popup-title{
+
+}
+.popup-text{
+
 }
 
 /*bonuses_panel*/
