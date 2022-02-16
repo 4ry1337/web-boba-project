@@ -6,13 +6,13 @@
 }
 @font-face {
 	font-family: 'Euclid Circular B';
-	src: url(fonts/euclid-circular-b-cubonfonts/Euclid-Circular-B-Regular.ttf) format("truetype");
+	src: url(fonts/euclid-circular-b-cufonfonts/Euclid-Circular-B-Regular.ttf) format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Euclid Circular B';
-	src: url(fonts/euclid-circular-b-cubonfonts/Euclid-Circular-B-SemiBold.ttf) format("truetype");
+	src: url(fonts/euclid-circular-b-cufonfonts/Euclid-Circular-B-SemiBold.ttf) format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
@@ -64,8 +64,11 @@ a:hover {
 /* Custom */
 .box {
 	background: #F4F4F1;
-	box-sizing: border-box;
 	border: 10px solid #FFFFFF;
+	border-radius: 20px;
+}
+.box-witoutb {
+	background: #F4F4F1;
 	border-radius: 20px;
 }
 .margin-b-20 {
@@ -79,6 +82,15 @@ a:hover {
 }
 .margin-l-20 {
 	margin-left: 20px;
+}
+.padding-0-20 {
+	padding: 0 20px;
+}
+.padding-0-50 {
+	padding: 0 50px;
+}
+.padding-10 {
+	padding: 10px;
 }
 /* Bootstrap */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -168,8 +180,15 @@ header {
 	align-items: center;
 	text-align: center;
 }
-.navbar-expand-lg .navbar-nav .nav-link:hover{
+.navbar-expand-lg .navbar-nav .nav-link:hover {
 	color: #C98952;
+}
+.dropdown-item.active, .dropdown-item:active {
+	background-color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #C98952;
+		background-color: #fff;
 }
 .navbar-brand {
 	padding: 0;
@@ -191,38 +210,88 @@ header {
 
 /* Main */
 main	{
-	position: relative;
-	top: 730px;
+	padding-top: 660px;
+}
+@media (max-width: 991.98px) {
+	main	{
+		padding-top: 530px;
+	}
+}
+@media (max-width: 767.98px) {
+	main	{
+		padding-top: 490px;
+	}
 }
 /* intro */
-.padding-0-20 {
-	padding: 0 20px;
+#intro_panel {
+
 }
-.padding-10 {
+#intro {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
 	padding: 10px;
+	align-self: stretch;
+	flex-grow: 0;
+	color: #FFFFFF;
 }
-#body_title {
-	position: relative;
-	height: 30px;
-
+#intro-title {
+	height: 125px;
+	width: 430px;
+	font-family: Simple tfb;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 144px;
+	line-height: 172px;
+	letter-spacing: 0.1em;
+}
+#intro-slogan {
+	margin-top: 40px;
+	font-style: normal;
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 36px;
+	line-height: 120%;
+	/* or 43px */
 
-	margin: 0 10px;
+	display: flex;
+	align-items: flex-start;
+	letter-spacing: 0.3em;
+
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
-#open{
+@media (max-width: 991.98px) {
+  #intro {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1199.98px) {
+  #intro-slogan {
+		letter-spacing: 0.1em;
+  }
+}
+@media (max-width: 991.98px) {
+  #intro-slogan {
+		letter-spacing: 0.3em;
+  }
+}
+
+#OC{
 	margin-left: 10px;
 	color: #72F38E;
-}
-#closed{
-	margin-left: 10px;
-	color: #F37272;
 }
 #open_hours {
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 30px;
+}
+@media (max-width: 767.98px) {
+	#open_hours {
+		display: none;
+	}
 }
 
 /*menu panel */
@@ -288,7 +357,6 @@ main	{
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin-right: 5px;
 }
 .price_details {
 	display: flex;
@@ -305,7 +373,7 @@ main	{
 	align-items: center;
 	flex: none;
 	order: 0;
-	align-items: stretch;
+	align-self: stretch;
 	flex-grow: 1;
 
 	margin-bottom: 9px;
@@ -337,6 +405,8 @@ main	{
 	margin-right: 10px;
 }
 .item_image {
+	width: 233.33px;
+	height: 350px;
 	flex: none;
 	order: 1;
 	flex-grow: 0;
@@ -349,9 +419,8 @@ main	{
 	margin-left: 10px;
 }
 #menu_back{
-	position: absolute;
-	height: 735px;
-	top: 245px;
+	height: 730px;
+	top: 50px;
 
 	background: #F4F4F1;
 	border: 10px solid #FFFFFF;
@@ -359,49 +428,56 @@ main	{
 	border-radius: 20px;
 	z-index: -1;
 }
-.popup{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-	top: 0;
-	left: 0;
-	opacity: 0;
-	visibility: hidden;
-}
-.popup:target{
-	opacity: 1;
-	visibility: visible;
-}
-.popup-body{
-	min-height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 50px 50px;
-}
 
-.popup-content{
+.modal-content {
+	border-radius: 20px;
+	border: 0;
+}
+.product-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 1;
+}
+.product-name {
+	font-size: 48px;
+	line-height: 61px;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.product-description{
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.product-order {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: flex-start;
-	padding: 20px;
-	background: #FFFFFF;
-	border-radius: 20px;
-}
-.popup-close{
+	align-items: center;
 
-}
-.popup-title{
 
+	flex: none;
+	order: 2;
+	flex-grow: 0;
 }
-.popup-text{
-
+.product-image {
+	width: 300px;
+	height: 450px;
 }
 
 /*bonuses_panel*/
-.bonus_title {
+#bonus_panel {
+	background-color: #F4F4F1;
+	padding: 20px 0;
+}
+#bonus_title {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 30px;
@@ -409,7 +485,14 @@ main	{
 	color: #C98952;
 	margin-bottom: 10px;
 }
+#bonus_description{
+	color: #3F322F;
+}
+#bonus_card {
+	width: 416px;
+	height: 294px;
 
+}
 /*abouts us panel*/
 #slogan {
 	margin-top: 100px;
@@ -436,6 +519,9 @@ main	{
 }
 
 /* contacts panel */
+#about_us_panel{
+	style="min-height: 660px;"
+}
 #contacts_panel {
 	position: relative;
 	height: 470px;
@@ -444,6 +530,12 @@ main	{
 	order: 4;
 }
 #contacts_box {
+	top: 50%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	padding: 20px 10px;
 
 	width: 300px;
@@ -457,10 +549,7 @@ main	{
 
 /* footer panel*/
 footer {
-	position: relative;
-	top: 730px;
 	width: 100%;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -525,10 +614,10 @@ footer {
 	margin-bottom: 10px;
 }
 #line1 {
+	border: 2px solid #FFFFFF;
+	border-radius: 1px;
 	flex: none;
 	align-self: stretch;
-
-	margin: 18px 0;
-	height: : 4px;
-	color: #F9FBF7;
+	flex-grow: 0;
+	margin: 8px 0px;
 }

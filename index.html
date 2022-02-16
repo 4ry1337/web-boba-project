@@ -12,7 +12,6 @@
   <link rel="icon" href="images/_logo_.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/_logo_.ico" type="image/x-icon">
 </head>
-
 <body>
   <header id="header">
     <div class="container">
@@ -57,6 +56,13 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contacts</a>
                   </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Language</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">ENG</a></li>
+                      <li><a class="dropdown-item" href="#">RU</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -64,24 +70,25 @@
     </div>
   </header>
   <img id="intro-bg">
-  <img id="handboba">
-  <!--<img id="blob1">
+  <!--<img id="handboba">
+  <img id="blob1">
   <img id="blob2">-->
   <main class="margin-b-20">
-    <div class="container">
-      <div class="d-flex flex-row align-items-center margin-b-20 padding-10">
-        <img class="" src="images/bubble_tea.png" width="27px" height="27px">
-        <h1 class="" id="body_title">Drinks that can brighten up any of your days</h1>
+    <div class="margin-b-20" id="intro_panel">
+      <div class="container margin-b-20" id="intro">
+        <h1 id="intro-title">Boba</h1>
+        <p id="intro-slogan">Drinks that can brighten up any of your days</p>
       </div>
-      <div class="d-flex flex-row justify-content-start margin-b-20" style="top: 70px;">
-        <h1 class="box col-md-3 d-flex align-items-center justify-content-center padding-0-20 margin-r-20" 	style="height: 110px;">Menu</h1>
-        <div class="box row align-items-center justify-content-between w-100 padding-0-20" style="height: 110px;">
-          <h1 class="col-md-auto">Now<span id="closed">closed</span></h1>
+      <div class="container d-flex flex-row justify-content-start margin-b-20" style="height: 110px;">
+        <h1 class="box col-md-3 d-flex align-items-center justify-content-center padding-0-20 margin-r-20">Menu</h1>
+        <div class="box row align-items-center justify-content-between w-100 padding-0-20">
+          <h1 class="col-md-auto">Now<span id="OC">open</span></h1>
           <h4 class="col-md-auto" id="open_hours">Open every day 11 am - 10 pm</h4>
         </div>
       </div>
-      <div class="margin-b-20" id="menu_panel">
-        <div class="d-flex flex-column align-items-star" style="padding: 0 50px;">
+    </div>
+    <div class="container margin-b-20 position-relative" id="menu_panel">
+        <div class="d-flex flex-column align-items-star padding-0-50">
           <div class="d-flex flex-row align-items-start order-0 flex-grow-0 align-self-stretch overflow-scroll margin-b-20">
             <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_NP" type="button">New Products</button>
             <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_MT" type="button">Milk tea</button>
@@ -90,9 +97,9 @@
             <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_IT" type="button">Ice tea</button>
             <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu" id="button_C" type="button">Coffee</button>
           </div>
-          <ul class="w-100 overflow-scroll d-flex flex-row align-items-start margin-b-20 flex-grow-0 flex-shrink-0 order-1 align-self-stretch" style="height: 550px; padding: 15px 0">
-              <li style="list-style: none;" id="i0">
-                <a href="#popup" class="position-relative d-flex flex-column align-items-start item">
+          <ul class="overflow-scroll d-flex flex-row align-items-start margin-b-20 flex-grow-0 flex-shrink-0 order-1 align-self-stretch" style="height: 550px; padding: 15px 0">
+              <li style="list-style: none;" id="i0" data-bs-toggle="modal" data-bs-target="#modal--1">
+                <div class="position-relative d-flex flex-column align-items-start item">
                   <div class="item_details">
                     <h1 class="position-relative align-items-center text-center flex-grow-1 flex-shrink-0 align-self-stretch order-0 name_of_item">Name of item</h1>
                     <p class="position-relative flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
@@ -112,118 +119,31 @@
                         <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
                       </div>
                     </div>
-                    <img class="item_image" src="images/item_image.png" width="227.67" height="342">
+                    <img class="item_image" src="images/item_image.png">
                   </div>
-                </a>
-              </li>
-              <li style="list-style: none;" id="i0">
-                <a href="#popup" class="position-relative d-flex flex-column align-items-start item">
-                  <div class="item_details">
-                    <h1 class="position-relative align-items-center text-center flex-grow-1 flex-shrink-0 align-self-stretch order-0 name_of_item">Name of item</h1>
-                    <p class="position-relative flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
-                  </div>
-                  <div class="position-relative d-flex flex-row align-items-start flex-grow-1 flex-shrink-0 order-1" width="312" height="306">
-                    <div class="item_price">
-                      <div class="price_details" id="large">
-                        <h4 class="text">Large</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
-                      </div>
-                      <div class="price_details" id="medium">
-                        <h4 class="text">Medium</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
-                      </div>
-                      <div class="price_details" id="bubbles">
-                        <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
-                      </div>
-                    </div>
-                    <img class="item_image" src="images/item_image.png" width="227.67" height="342">
-                  </div>
-                </a>
-              </li>
-              <li style="list-style: none;" id="i0">
-                <a href="#popup" class="position-relative d-flex flex-column align-items-start item">
-                  <div class="item_details">
-                    <h1 class="position-relative align-items-center text-center flex-grow-1 flex-shrink-0 align-self-stretch order-0 name_of_item">Name of item</h1>
-                    <p class="position-relative flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
-                  </div>
-                  <div class="position-relative d-flex flex-row align-items-start flex-grow-1 flex-shrink-0 order-1" width="312" height="306">
-                    <div class="item_price">
-                      <div class="price_details" id="large">
-                        <h4 class="text">Large</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
-                      </div>
-                      <div class="price_details" id="medium">
-                        <h4 class="text">Medium</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
-                      </div>
-                      <div class="price_details" id="bubbles">
-                        <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
-                      </div>
-                    </div>
-                    <img class="item_image" src="images/item_image.png" width="227.67" height="342">
-                  </div>
-                </a>
-              </li>
-              <li style="list-style: none;" id="i0">
-                <a href="#popup" class="position-relative d-flex flex-column align-items-start item">
-                  <div class="item_details">
-                    <h1 class="position-relative align-items-center text-center flex-grow-1 flex-shrink-0 align-self-stretch order-0 name_of_item">Name of item</h1>
-                    <p class="position-relative flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
-                  </div>
-                  <div class="position-relative d-flex flex-row align-items-start flex-grow-1 flex-shrink-0 order-1" width="312" height="306">
-                    <div class="item_price">
-                      <div class="price_details" id="large">
-                        <h4 class="text">Large</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
-                      </div>
-                      <div class="price_details" id="medium">
-                        <h4 class="text">Medium</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
-                      </div>
-                      <div class="price_details" id="bubbles">
-                        <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
-                      </div>
-                    </div>
-                    <img class="item_image" src="images/item_image.png" width="227.67" height="342">
-                  </div>
-                </a>
+                </div>
               </li>
           </ul>
-          <div id="popup" class="popup">
-            <a href="#header" class="position-absolute w-100 h-100"></a>
-            <div class="popup-body">
-              <div class="popup-content">
-                <div class="popup-title">Name of item</div>
-                <div class="popup-text">
-                  Description of item Description of item Description of item Description of item Description of item Description of item
-                </div>
-                <div class="margin-b-20 w-100 d-flex flex-row justify-content-center align-items-center flex-grow-0 flex-shrink-0 order-2 align-self-stretch" style="height: 70px;">
-                  <h1>Order through</h1>
-                  <a class="d-flex" id="wolt" href="https://wolt.com/en/kaz/nur-sultan/restaurant/boba" target="_blank"><img src="images/wolt_logo.png" width="100px" height="46.13px"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="margin-b-20 w-100 d-flex flex-row justify-content-center align-items-center flex-grow-0 flex-shrink-0 order-2 align-self-stretch" style="height: 70px;">
+          <div class="margin-b-20 d-flex flex-row justify-content-center align-items-center flex-grow-0 flex-shrink-0 order-2 align-self-stretch" style="height: 70px;">
             <h1>Order through</h1>
             <a class="d-flex" id="wolt" href="https://wolt.com/en/kaz/nur-sultan/restaurant/boba" target="_blank"><img src="images/wolt_logo.png" width="100px" height="46.13px"></a>
           </div>
         </div>
-        <div class="container" id="menu_back">
-
+        <div class="container position-absolute" id="menu_back"></div>
+      </div>
+    </div>
+    <div class="margin-b-20" id="bonus_panel" >
+      <div class="container">
+        <div class="row d-flex flex-row justify-content-evenly align-items-center margin-b-20 padding-0-50">
+          <div class="col-lg-4 d-flex flex-column align-items-stretch flex-grow-0 flex-shrink-0 order-0 align-slef-stretch">
+            <h1 class="flex-grow-1 flex-shrink-0 order-0" id="bonus_title">10th Boba tea for free</h1>
+            <p class="flex-grow-1 flex-shrink-0 order-1" id="bonus_description"> Come to boba tea, collect nine marks on the coupon and get the tenth drink as a gift.</p>
+          </div>
+          <img class="col-lg-4 flex-grow-0 flex-shrink-0 order-1" id="bonus_card" src="images/bonus_card.png">
         </div>
       </div>
-      <div class="row w-100 d-flex  flex-row justify-content-center align-items-center margin-b-20">
-        <div class="col-lg-4 d-flex flex-column align-items-stretch flex-grow-0 flex-shrink-0 order-0 align-slef-stretch padding-0-20">
-          <h1 class="bonus_title flex-grow-1 flex-shrink-0 order-0">10th Boba tea for free</h1>
-          <p class="flex-grow-1 flex-shrink-0 order-1 bonus_description" style="color: #3F322F!important;"> Come to boba tea, collect nine marks on the coupon and get the tenth drink as a gift.</p>
-        </div>
-        <img class="col-lg-4 flex-grow-0 flex-shrink-0 order1" src="images/bonus_card.png" style="width: 416px!important; height: 294px!important;">
-      </div>
-      <div class="w-100 margin-b-20" style="min-height: 660px;">
+    </div>
+    <div class="container margin-b-20" id="about_us_panel">
         <h1 class="row box d-flex justify-content-center align-items-center mx-auto" style="width: 385px; height: 82px;">About us</h1>
         <div class="row justify-content-end">
           <h2 class="col-md-10 d-flex flex-row justify-content-center align-items-center text-center" id="slogan">It’s <br> tealicious</h2>
@@ -233,10 +153,10 @@
              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-      </div>
-      <div class="row margin-b-20" id="contacts_panel">
-        <div class="col-md-4 position-absolute d-flex flex-column justify-content-center h-100 align-items-center">
-          <div class="d-flex flex-column justify-content-between align-items-center box" id="contacts_box">
+    </div>
+    <div class="container margin-b-20">
+      <div class="row" id="contacts_panel">
+        <div class="box-witoutb" id="contacts_box">
             <h1 class="d-flex align-items-center flex-grow-0 flex-shrink-0 order-0 align-self-stretcg">Contacts</h1>
             <div class="d-flex flex-column align-items-start flex-grow-0 flex-shrink-0 order-1 align-self-stretch">
               <div class="d-flex flex-row align-tems-center flex-grow-0 flex-shrink-0 order-0 align-slef-stretch margin-b-10">
@@ -248,7 +168,6 @@
               </div>
             </div>
           </div>
-        </div>
         <div class="row h-100 overflow-scroll justify-content-end">
           <iframe class="col-md-10"  style="border-radius: 20px;"
                   src="https://yandex.com/map-widget/v1/?um=constructor%3Abeb61ce5becf9f391d556fe4737f67d6dddfcc4b3934fc6601b717c71d8a5335&amp;source=constructor">
@@ -289,7 +208,7 @@
             <h3 class="options_title">Contacts</h3>
             <div class="options">
               <h4 class="option">Map</h4>
-              <h4 class="option">+7 777 777 77 77</h4>
+              <h4 class="option">+7&nbsp;777&nbsp;777&nbsp;77&nbsp;77</h4>
             </div>
           </div>
           <div class="col-md-4 padding-10">
@@ -302,9 +221,82 @@
         </div>
       </div>
       <hr id="line1">
-      <h4 class="text-center flex-grow-0 flex-shrink-0 order-3 margin-b-20">Copyright 2022 © boba.kz</h4>
+      <h4 class="text-center flex-grow-0 flex-shrink-0 order-3 margin-b-20">Copyright 2022 &copy; boba.kz</h4>
     </div>
   </footer>
+  <!-- Modal-->
+  <div class="modal fade" id="modal--1" tabindex="-1" area-labeledby="modal--1" area-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="margin-r-20">Name of item</h5>
+          <h5>KZT&nbsp;1200</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <div class="modal-body">
+            <p>
+              Description of item Description of item Description of item Description of item Description of item Description of item
+            </p>
+            <div class="row">
+              <div class="box margin-b-10 col-lg-4 padding-10">
+                <h5>Choose size</h5>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefoult" id="flexRadioDefoult1">
+                  <label class="form-check-label" for="flexRadioDefoult1">
+                    Medium
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefoult" id="flexRadioDefoult2" checked>
+                  <label class="form-check-label" for="flexRadioDefoult2">
+                    Large
+                  </label>
+                </div>
+              </div>
+              <div class="box margin-b-10 col-lg-4 padding-10">
+                <h5>Add boba balls</h5>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Boba Balls</label>
+                </div>
+              </div>
+              <div class="box margin-b-10 col-md-4 padding-10">
+                <h5>Sugar</h5>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sugar" id="sugar1">
+                  <label class="form-check-label" for="sugar1">
+                    No sugar
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sugar" id="sugar2" checked>
+                  <label class="form-check-label" for="sugar2">
+                    Less sugar
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sugar" id="sugar3" checked>
+                  <label class="form-check-label" for="sugar3">
+                    Defoult
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sugar" id="sugar4" checked>
+                  <label class="form-check-label" for="sugar4">
+                    More sugar
+                  </label>
+                </div>
+              </div>
+            </div>
+            <img class="product-image" src="images/item_image.png">
+          </div>
+          <div class="modal-footer">
+            <h1>Order through</h1>
+            <a class="d-flex" id="wolt" href="https://wolt.com/en/kaz/nur-sultan/restaurant/boba/masala-itemid-6173a9c0ecbf3eb8800c2286" target="_blank"><img src="images/wolt_logo.png" width="100px" height="46.13px"></a>
+          </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
