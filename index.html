@@ -45,8 +45,8 @@
                 >
                 </button>
               </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <div class="offcanvas-body justify-content-end">
+                <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="#">Menu</a>
                   </li>
@@ -57,9 +57,8 @@
                     <a class="nav-link" href="#">Contacts</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Language</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ENG</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">ENG</a></li>
                       <li><a class="dropdown-item" href="#">RU</a></li>
                     </ul>
                   </li>
@@ -70,67 +69,309 @@
     </div>
   </header>
   <img id="intro-bg">
-  <!--<img id="handboba">
+  <!--  <img id="handboba">
   <img id="blob1">
   <img id="blob2">-->
   <main class="margin-b-20">
     <div class="margin-b-20" id="intro_panel">
       <div class="container margin-b-20" id="intro">
-        <h1 id="intro-title">Boba</h1>
+        <h1 id="intro-title">boba</h1>
         <p id="intro-slogan">Drinks that can brighten up any of your days</p>
       </div>
-      <div class="container d-flex flex-row justify-content-start margin-b-20" style="height: 110px;">
-        <h1 class="box col-md-3 d-flex align-items-center justify-content-center padding-0-20 margin-r-20">Menu</h1>
-        <div class="box row align-items-center justify-content-between w-100 padding-0-20">
+      <div class="container d-flex flex-row justify-content-start margin-b-20" style="height: 120px">
+        <h1 class="box col-md-3 d-flex align-items-center justify-content-center padding-20 margin-r-20" style="mix-blend-mode: screen; font-weight: bold;">Menu</h1>
+        <div class="box row align-items-center justify-content-between w-100 padding-20" style="mix-blend-mode: screen; font-weight: bold;">
           <h1 class="col-md-auto">Now<span id="OC">open</span></h1>
           <h4 class="col-md-auto" id="open_hours">Open every day 11 am - 10 pm</h4>
         </div>
       </div>
     </div>
-    <div class="container margin-b-20 position-relative" id="menu_panel">
+    <div class="margin-b-20" id="menu_panel">
+      <div class="container position-relative">
         <div class="d-flex flex-column align-items-star padding-0-50">
-          <div class="d-flex flex-row align-items-start order-0 flex-grow-0 align-self-stretch overflow-scroll margin-b-20">
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_NP" type="button">New Products</button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_MT" type="button">Milk tea</button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_BD" type="button">Branded Drinks</button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_S" type="button">Smoothies</button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu margin-r-20" id="button_IT" type="button">Ice tea</button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_menu" id="button_C" type="button">Coffee</button>
+          <!-- Category -->
+          <div class="d-flex flex-row justify-content-center order-0 flex-grow-0 align-self-stretch overflow-scroll margin-b-20" id="cat">
+            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10 cat_active" data-menu-target="#NP" id="button_NP" type="button"> <span class="button_text">New Products  </span> <img class="button_img" src="images/logo NP.png"       alt="New Products"  > </button>
+            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#MT" id="button_MT" type="button"> <span class="button_text">Milk tea      </span> <img class="button_img" src="images/milk_tea.png"      alt="Milk tea"      > </button>
+            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#BD" id="button_BD" type="button"> <span class="button_text">Branded Drinks</span> <img class="button_img" src="images/BrandedDrinks.png" alt="Branded Drinks"> </button>
+            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#S" id="button_S"  type="button"> <span class="button_text">Smoothies     </span> <img class="button_img" src="images/smoothies.png"     alt="Smoothies"     > </button>
+            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#IT" id="button_IT" type="button"> <span class="button_text">Ice tea       </span> <img class="button_img" src="images/ice_tea.png"       alt="Ice tea"       > </button>
+            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#C" id="button_C"  type="button"> <span class="button_text">Coffee        </span> <img class="button_img" src="images/coffee_cup.png"    alt="Coffee"        > </button>
           </div>
-          <ul class="overflow-scroll d-flex flex-row align-items-start margin-b-20 flex-grow-0 flex-shrink-0 order-1 align-self-stretch" style="height: 550px; padding: 15px 0">
-              <li style="list-style: none;" id="i0" data-bs-toggle="modal" data-bs-target="#modal--1">
-                <div class="position-relative d-flex flex-column align-items-start item">
-                  <div class="item_details">
-                    <h1 class="position-relative align-items-center text-center flex-grow-1 flex-shrink-0 align-self-stretch order-0 name_of_item">Name of item</h1>
-                    <p class="position-relative flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
-                  </div>
-                  <div class="position-relative d-flex flex-row align-items-start flex-grow-1 flex-shrink-0 order-1" width="312" height="306">
-                    <div class="item_price">
-                      <div class="price_details" id="large">
-                        <h4 class="text">Large</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
-                      </div>
-                      <div class="price_details" id="medium">
-                        <h4 class="text">Medium</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
-                      </div>
-                      <div class="price_details" id="bubbles">
-                        <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
-                        <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
-                      </div>
+          <!-- Menu -->
+          <ul class="overflow-scroll margin-b-20 menu_window active" id="NP">
+              <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+                <div class="item_details">
+                  <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                  <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+                </div>
+                <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                  <div class="item_price">
+                    <div class="price_details" id="large">
+                      <h4 class="text">Large</h4>
+                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
                     </div>
-                    <img class="item_image" src="images/item_image.png">
+                    <div class="price_details" id="medium">
+                      <h4 class="text">Medium</h4>
+                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                    </div>
+                    <div class="price_details" id="bubbles">
+                      <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                      <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                    </div>
                   </div>
+                  <img class="item_image" src="images/item_image.png">
                 </div>
               </li>
           </ul>
+          <!--<ul class="overflow-scroll margin-b-20 menu_window" id="MT">
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li> 
+          </ul>
+          <ul class="overflow-scroll margin-b-20 menu_window" id="BD">
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li> 
+          </ul>
+          <ul class="overflow-scroll margin-b-20 menu_window" id="BD">
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li> 
+          </ul>
+          <ul class="overflow-scroll margin-b-20 menu_window" id="S">
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li> 
+          </ul>
+          <ul class="overflow-scroll margin-b-20 menu_window" id="C">
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+          </ul>-->
+          <!-- Order -->
           <div class="margin-b-20 d-flex flex-row justify-content-center align-items-center flex-grow-0 flex-shrink-0 order-2 align-self-stretch" style="height: 70px;">
             <h1>Order through</h1>
             <a class="d-flex" id="wolt" href="https://wolt.com/en/kaz/nur-sultan/restaurant/boba" target="_blank"><img src="images/wolt_logo.png" width="100px" height="46.13px"></a>
           </div>
         </div>
-        <div class="container position-absolute" id="menu_back"></div>
-      </div>
+          <div class="container position-absolute box" id="menu_back"></div>
+        </div>
     </div>
     <div class="margin-b-20" id="bonus_panel" >
       <div class="container">
@@ -143,42 +384,38 @@
         </div>
       </div>
     </div>
-    <div class="container margin-b-20" id="about_us_panel">
+    <div class="margin-b-20" id="about_us_panel">
+      <div class="container">
         <h1 class="row box d-flex justify-content-center align-items-center mx-auto" style="width: 385px; height: 82px;">About us</h1>
         <div class="row justify-content-end">
-          <h2 class="col-md-10 d-flex flex-row justify-content-center align-items-center text-center" id="slogan">It’s <br> tealicious</h2>
-          <p class="col-md-10 d-flex flex-row justify-content-center align-items-center" id="about_us_text">
+          <h2 class="" id="slogan">It’s</br>tealicious</h2>
+          <p class="d-flex flex-row justify-content-center align-items-center" id="about_us_text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+      </div>
     </div>
-    <div class="container margin-b-20">
-      <div class="row" id="contacts_panel">
-        <div class="box-witoutb" id="contacts_box">
-            <h1 class="d-flex align-items-center flex-grow-0 flex-shrink-0 order-0 align-self-stretcg">Contacts</h1>
-            <div class="d-flex flex-column align-items-start flex-grow-0 flex-shrink-0 order-1 align-self-stretch">
-              <div class="d-flex flex-row align-tems-center flex-grow-0 flex-shrink-0 order-0 align-slef-stretch margin-b-10">
-                <img src="images/location.png" width="50" height="50">
-                <p class="d-flex align-items-center flex-grow-1 order-1 align-self-stretch margin-l-20" >​Түркістан, 16/5 Есиль район, Нур-Султан</p>
-              </div>
-              <div class="d-flex flex-row justify-content-center align-items-center flex-grow-0 flex-shrink-0 order-0 align-self-stretch links">
-                <a href="https://www.instagram.com/bobateakz/" target="_blank"><img class="icon_link" src="images/instagram.png"></a>
-              </div>
+    <div class="margin-b-20" id="contacts_panel">
+      <div class="container">
+        <div class="row position-relative">
+          <div class="box-withoutb" id="contacts_box">
+            <h1 class="d-flex align-items-center align-self-stretch">Contacts</h1>
+            <p class="d-flex align-items-center align-self-stretch" >​Түркістан, 16/5 Есиль район, Нур-Султан</p>
+            <div class="d-flex flex-row justify-content-start align-items-center flex-grow-0 align-self-stretch links">
+              <a href="https://www.instagram.com/bobateakz/" target="_blank"><img class="icon_link" src="images/instagram.png"></a>
             </div>
           </div>
-        <div class="row h-100 overflow-scroll justify-content-end">
-          <iframe class="col-md-10"  style="border-radius: 20px;"
-                  src="https://yandex.com/map-widget/v1/?um=constructor%3Abeb61ce5becf9f391d556fe4737f67d6dddfcc4b3934fc6601b717c71d8a5335&amp;source=constructor">
-          </iframe>
+          <iframe id="map" src="https://yandex.com/map-widget/v1/?um=constructor%3Abeb61ce5becf9f391d556fe4737f67d6dddfcc4b3934fc6601b717c71d8a5335&amp;source=constructor" width="1140" height="470" frameborder="0"></iframe>
         </div>
       </div>
     </div>
   </main>
+
   <footer>
     <div class="container">
-      <hr id="line1">
+      <div id="line1"></div>
       <div class="row d-flex flex-row justify-content-between align-items-center flex-grow-0 flex-shrink-0 order-1 align-self-stretch" style="padding: 0px 41px;">
         <div class="col-lg-4 d-flex flex-column justify-content-between flex-grow-1 flex-shrink-0 order-0 align-self-stretch">
           <a class="flex-grow-0 flex-shrink-0 order-0 brand margin-b-20" href="#">
@@ -220,10 +457,11 @@
           </div>
         </div>
       </div>
-      <hr id="line1">
+      <div id="line1"></div>
       <h4 class="text-center flex-grow-0 flex-shrink-0 order-3 margin-b-20">Copyright 2022 &copy; boba.kz</h4>
     </div>
   </footer>
+
   <!-- Modal-->
   <div class="modal fade" id="modal--1" tabindex="-1" area-labeledby="modal--1" area-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
