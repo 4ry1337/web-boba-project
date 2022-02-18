@@ -90,16 +90,16 @@
       <div class="container position-relative">
         <div class="d-flex flex-column align-items-star padding-0-50">
           <!-- Category -->
-          <div class="d-flex flex-row justify-content-center order-0 flex-grow-0 align-self-stretch overflow-scroll margin-b-20" id="cat">
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10 cat_active" data-menu-target="#NP" id="button_NP" type="button"> <span class="button_text">New Products  </span> <img class="button_img" src="images/logo NP.png"       alt="New Products"  > </button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#MT" id="button_MT" type="button"> <span class="button_text">Milk tea      </span> <img class="button_img" src="images/milk_tea.png"      alt="Milk tea"      > </button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#BD" id="button_BD" type="button"> <span class="button_text">Branded Drinks</span> <img class="button_img" src="images/BrandedDrinks.png" alt="Branded Drinks"> </button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#S" id="button_S"  type="button"> <span class="button_text">Smoothies     </span> <img class="button_img" src="images/smoothies.png"     alt="Smoothies"     > </button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#IT" id="button_IT" type="button"> <span class="button_text">Ice tea       </span> <img class="button_img" src="images/ice_tea.png"       alt="Ice tea"       > </button>
-            <button class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center button_cat margin-r-10"        data-menu-target="#C" id="button_C"  type="button"> <span class="button_text">Coffee        </span> <img class="button_img" src="images/coffee_cup.png"    alt="Coffee"        > </button>
-          </div>
+          <ul class="d-flex flex-row justify-content-start overflow-scroll margin-b-20" id="cat">
+            <li data-menu-target="#NP" class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center margin-r-10 active" id="button_NP"> <span class="button_text">New Products  </span> <img class="button_img" src="images/logo NP.png"       alt="New Products"  > </li>
+            <li data-menu-target="#MT" class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center margin-r-10"        id="button_MT"> <span class="button_text">Milk tea      </span> <img class="button_img" src="images/milk_tea.png"      alt="Milk tea"      > </li>
+            <li data-menu-target="#BD" class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center margin-r-10"        id="button_BD"> <span class="button_text">Branded Drinks</span> <img class="button_img" src="images/BrandedDrinks.png" alt="Branded Drinks"> </li>
+            <li data-menu-target="#S"  class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center margin-r-10"        id="button_S" > <span class="button_text">Smoothies     </span> <img class="button_img" src="images/smoothies.png"     alt="Smoothies"     > </li>
+            <li data-menu-target="#IT" class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center margin-r-10"        id="button_IT"> <span class="button_text">Ice tea       </span> <img class="button_img" src="images/ice_tea.png"       alt="Ice tea"       > </li>
+            <li data-menu-target="#C"  class="text-decoration-none d-flex flex-grow-0 flex-shrink-0 align-items-center text-center"                    id="button_C" > <span class="button_text">Coffee        </span> <img class="button_img" src="images/coffee_cup.png"    alt="Coffee"        > </li>
+          </ul>
           <!-- Menu -->
-          <ul class="overflow-scroll margin-b-20 menu_window active" id="NP">
+          <ul data-menu-content class="overflow-scroll margin-b-20 active" id="NP">
               <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
                 <div class="item_details">
                   <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
@@ -124,7 +124,7 @@
                 </div>
               </li>
           </ul>
-          <!--<ul class="overflow-scroll margin-b-20 menu_window" id="MT">
+          <ul data-menu-content class="overflow-scroll margin-b-20" id="MT">
             <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
               <div class="item_details">
                 <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
@@ -172,7 +172,7 @@
               </div>
             </li> 
           </ul>
-          <ul class="overflow-scroll margin-b-20 menu_window" id="BD">
+          <ul data-menu-content class="overflow-scroll margin-b-20" id="BD">
             <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
               <div class="item_details">
                 <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
@@ -220,7 +220,7 @@
               </div>
             </li> 
           </ul>
-          <ul class="overflow-scroll margin-b-20 menu_window" id="BD">
+          <ul data-menu-content class="overflow-scroll margin-b-20" id="BD">
             <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
               <div class="item_details">
                 <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
@@ -268,7 +268,7 @@
               </div>
             </li> 
           </ul>
-          <ul class="overflow-scroll margin-b-20 menu_window" id="S">
+          <ul data-menu-content class="overflow-scroll margin-b-20" id="S">
             <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
               <div class="item_details">
                 <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
@@ -316,7 +316,7 @@
               </div>
             </li> 
           </ul>
-          <ul class="overflow-scroll margin-b-20 menu_window" id="C">
+          <ul data-menu-content class="overflow-scroll margin-b-20" id="IT">
             <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
               <div class="item_details">
                 <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
@@ -363,7 +363,55 @@
                 <img class="item_image" src="images/item_image.png">
               </div>
             </li>
-          </ul>-->
+          </ul>
+          <ul data-menu-content class="overflow-scroll margin-b-20" id="C">
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+            <li class="d-flex flex-column align-items-start item" id="i1" data-bs-toggle="modal" data-bs-target="#modal--1">
+              <div class="item_details">
+                <h1 class="align-items-center text-center flex-grow-1 align-self-stretch order-0 name_of_item">Name of item</h1>
+                <p class="flex-grow-0 flex-shrink-0 align-self-stretch order-1 description_of_item">Description of item Description of item Description of item Description of item Description of item Description of item</p>
+              </div>
+              <div class="position-relative d-flex flex-row align-items-start flex-grow-1 order-1" width="312" height="306">
+                <div class="item_price">
+                  <div class="price_details" id="large">
+                    <h4 class="text">Large</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1400</h1>
+                  </div>
+                  <div class="price_details" id="medium">
+                    <h4 class="text">Medium</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">1100</h1>
+                  </div>
+                  <div class="price_details" id="bubbles">
+                    <h4 class="text"><img id="plus" src="images/plus.png" height="19" width="18">Bubbles</h4>
+                    <h1 class="price"><img id="tenge_image" src="images/tenge.png" height="36" width="27">200</h1>
+                  </div>
+                </div>
+                <img class="item_image" src="images/item_image.png">
+              </div>
+            </li>
+          </ul>
           <!-- Order -->
           <div class="margin-b-20 d-flex flex-row justify-content-center align-items-center flex-grow-0 flex-shrink-0 order-2 align-self-stretch" style="height: 70px;">
             <h1>Order through</h1>

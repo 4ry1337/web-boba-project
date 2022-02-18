@@ -7,12 +7,37 @@ if( date.getHours()<11 || date.getHours()>22){
 }
 
 // category buttons
-var btn_c = document.getElementById("cat")
-var cat_btns = btn_c.getElementsByClassName("button_cat")
-for(var i=0; i<cat_btns.length; i++){
-  cat_btns[i].addEventListener("click", function (){
-    var current = document.getElementById("cat").getElementsByClassName("cat_active")
-    current[0].className = current[0].className.replace("cat_active")
-    this.className +=" cat_active"
+const menus = document.querySelectorAll("[data-menu-target]")
+const menuContents = document.querySelectorAll("[data-menu-content]")
+menus.forEach(menu => {
+  menu.addEventListener("click", () => {
+    menus.forEach(menu => {
+      menu.classList.remove("active")
+    })
+    menu.classList.add("active")
+    //show relevant menu
+    const target = document.querySelector(menu.dataset.menuTarget)
+    menuContents.forEach(menuContent => {
+      menuContent.classList.remove("active")
+    })
+    target.classList.add("active")
   })
-}
+})
+
+/*(function() {
+  function scrollHorizontally(e) {
+      e = window.event || e;
+      var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+      document.getElementById('yourDiv').scrollLeft -= (delta * 40); // Multiplied by 40
+      e.preventDefault();
+  }
+  if (document.getElementById('yourDiv').addEventListener) {
+      // IE9, Chrome, Safari, Opera
+      document.getElementById('yourDiv').addEventListener('mousewheel', scrollHorizontally, false);
+      // Firefox
+      document.getElementById('yourDiv').addEventListener('DOMMouseScroll', scrollHorizontally, false);
+  } else {
+      // IE 6/7/8
+      document.getElementById('yourDiv').attachEvent('onmousewheel', scrollHorizontally);
+  }
+});*/
