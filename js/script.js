@@ -24,6 +24,27 @@ menus.forEach(menu => {
   })
 })
 
+$(document).ready(function(){
+  $('.slick').slick({
+    lazyLoad: 'progressive',
+    centerMode: true,
+    centerPadding: '0px',
+    vertical: true,
+    infinite: true,
+    slidesToShow: 3,
+    autoplay: true,
+    arrows: false,
+    pauseOnHover: true,
+    responsive: [               
+      {
+          breakpoint: 991.98,
+          settings: {
+          vertical: false,
+          slidesToShow: 1,
+          }
+      }],
+  })
+})
 /*(function() {
   function scrollHorizontally(e) {
       e = window.event || e;
