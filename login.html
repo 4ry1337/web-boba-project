@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boba tea</title>
+    <link rel="icon" href="images/_logo_.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/_logo_.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="login.css">
+    <script src="js/script.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="bg"></div>
+    <form action="">
+        <h1>Log in</h1>
+        <div class="group">
+            <label>E-mail</label>
+            <input type="text" placeholder="email@gmail.com">
+            <label>Password</label>
+            <div style="position: relative;">
+                <input type="password" placeholder="Password" id="password-input" name="password"> 
+                <a href="#" class="password-control"></a>
+            </div>
+                <div class="error"></div>
+            <button id="submit">Log in</button>
+            <p class="text">Don't have an account? <a href="Register.html" class="tx">Sign up</a></p>
+        </div>
+    </form>
+    <script src="login.js"></script>
+</body>
+</html>

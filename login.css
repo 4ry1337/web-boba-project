@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'Euclid Circular B';
+	src: url(fonts/euclid-circular-b-cufonfonts/Euclid-Circular-B-Bold.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Euclid Circular B';
+	src: url(fonts/euclid-circular-b-cufonfonts/Euclid-Circular-B-Regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Euclid Circular B';
+	src: url(fonts/euclid-circular-b-cufonfonts/Euclid-Circular-B-SemiBold.ttf) format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Antipasto Pro';
+	src: url(fonts/antipasto-pro-cufonfonts-webfont/AntipastoPro-Hairline_trial.woff) format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Simple tfb';
+	src: url(fonts/simple-tfb.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: Euclid Circular B;
+    margin: 0;
+}
+#bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/background_landing_page.png) center no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+h1 {
+    cursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #7E665C;
+}
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    background: #E8DFD4;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    opacity: 0.95;
+}
+.group {
+    padding: 5px;
+}
+label {
+    margin: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px/20px;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+input:focus {
+    border: 2px solid #7E665C;
+    transform: translateX(15px);
+    width: 385px;
+}
+button {
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 50px;
+    margin-top: 13px;
+    color: #fff;
+    background: #7E665C;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius: 20px;
+}
+button:hover {
+    opacity: .80;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.group {
+    position: relative;
+   }
+ 
+.password-control {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+   }
+.password-control.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
+.tx {
+    margin-left: 7px;
+    color: blue;
+}
